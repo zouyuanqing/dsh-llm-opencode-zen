@@ -1,0 +1,37 @@
+{
+  "name": "@dsh-external/dsh-llm-opencode-zen",
+  "version": "0.1.0",
+  "description": "OpenCode Zen 免费模型 LLM 适配器（Bearer public 零配置，27 个免费模型；可选 OPENCODE_API_KEY 解锁付费模型）",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "opencode",
+    "zen",
+    "free",
+    "llm-adapter"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.1.0-rc <2",
+    "@deepseek-ai/dsh-credentials": ">=0.1.0-rc <2",
+    "@deepseek-ai/dsh-launch-environment": ">=0.1.0-rc <2",
+    "@deepseek-ai/dsh-settings": ">=0.1.0-rc <2",
+    "@deepseek-ai/dsh-timeout": ">=0.1.0-rc <2",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
